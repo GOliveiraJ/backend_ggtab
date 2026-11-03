@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Segredos
+.env
+
+# Sistema
+.DS_Store
+Thumbs.db
