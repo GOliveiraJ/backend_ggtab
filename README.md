@@ -25,7 +25,7 @@ Este repositório contém o **Cérebro (Back-end)** da plataforma de fiscalizaç
 
 A API atua como um hub central, processando evidências de campo (OCR), salvando operações em tempo real e fornecendo pareceres jurídicos automatizados utilizando IA executada localmente.
 
-## 🚀 Principais Funcionalidades
+🚀 Principais Funcionalidades
 
 - **Motor Jurídico Híbrido (IA Local):** Integração direta com o modelo **Llama 3.2 via Ollama**. A API recebe perguntas dos fiscais, cruza com a base de dados em memória e gera pareceres jurídicos formatados (citando RDCs da ANVISA) sem enviar dados sensíveis para a nuvem.
 - **Visão Computacional Avançada (OCR):** Endpoint dedicado para receber fotos de embalagens em Base64 e utilizar o `PyTesseract` para extrair, higienizar e validar números de CNPJ diretamente das imagens.
@@ -33,7 +33,7 @@ A API atua como um hub central, processando evidências de campo (OCR), salvando
 - **Sincronização em Nuvem (BaaS):** Conexão nativa com o **Supabase** (PostgreSQL) para persistência de dados de produtos customizados, trilha de auditoria (logs) e histórico de operações.
 - **Arquitetura Escalável:** Construído com FastAPI e Pydantic, garantindo documentação automática (Swagger/OpenAPI), validação de tipos rigorosa e suporte a requisições assíncronas de alta concorrência.
 
-## 🛠️ Stack Tecnológico
+🛠️ Stack Tecnológico
 
 | Componente | Tecnologia |
 | :--- | :--- |
@@ -43,14 +43,14 @@ A API atua como um hub central, processando evidências de campo (OCR), salvando
 | **Banco de Dados** | Supabase (PostgreSQL) |
 | **Manipulação de Dados/Docs** | Pandas, FPDF, OpenPyXL |
 
-## 📦 Como Instalar e Configurar
+📦 Como Instalar e Configurar
 
-### 1. Pré-requisitos
+1. Pré-requisitos
 - Python 3.8+
 - [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) instalado no sistema operacional (Obrigatório para o endpoint de leitura de CNPJ).
 - [Ollama](https://ollama.ai/) rodando localmente com o modelo `llama3.2` baixado.
 
-### 2. Instalação
+2. Instalação
 Clone o repositório e instale as dependências:
 ```bash
 git clone [https://github.com/seu-usuario/ggtab-api-backend.git](https://github.com/seu-usuario/ggtab-api-backend.git)
